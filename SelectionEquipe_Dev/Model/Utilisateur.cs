@@ -8,5 +8,6 @@ namespace SelectionEquipe_Dev.Model
 {
     public abstract class Utilisateur
     {
+        public string nom { get; set; }
     }
 }
