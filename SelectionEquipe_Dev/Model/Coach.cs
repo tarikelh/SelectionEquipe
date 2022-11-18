@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace SelectionEquipe_Dev.Model
 {
-    public class Coach : Utilisateur
+    public abstract class Coach : Utilisateur
     {
+        public Equipe Equipe { get; set; } = null;
     }
 }

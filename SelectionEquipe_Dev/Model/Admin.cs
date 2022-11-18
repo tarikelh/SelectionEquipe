@@ -8,5 +8,6 @@ namespace SelectionEquipe_Dev.Model
 {
     public class Admin : Utilisateur
     {
+
     }
 }

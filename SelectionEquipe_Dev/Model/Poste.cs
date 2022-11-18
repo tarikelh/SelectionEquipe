@@ -8,16 +8,15 @@ using System.Threading.Tasks;
 
 namespace SelectionEquipe_Dev.Model
 {
-    public class Sport
+    public class Poste
     {
         [Key]
-        public int SportId { get; set; }
+        public int PosteId { get; set; }
 
         [@RequiredAttribute]
-        [DisplayName("Nom Sport")]
-        public string NomSport { get; set; }
-        public ICollection<Poste> Postes { get; set; }
-        public ICollection<Utilisateur> Utilisateurs { get; set; }
-
+        [DisplayName("Nom Poste")]
+        public string NomPoste { get; set; }
+        public Sport Sport { get; set; }
+        public ICollection<Joueur> Joueurs { get; set; }
     }
 }
