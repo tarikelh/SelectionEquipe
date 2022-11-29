@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace SelectionEquipe_Dev.Model
 {
-    public abstract class Joueur : Utilisateur
+    public class Joueur : Utilisateur
     {
         public int Note { get; set; }
 
         public string Commentaire { get; set; }
 
-        public Equipe Equipe { get; set; }=null;
+        public virtual Equipe Equipe { get; set; }
 
-        public ICollection<Poste> Postes { get; set; }
+        public int? EquipeId { get; set; }
+
+        public virtual ICollection<Poste> Postes { get; set; }
     }
 }

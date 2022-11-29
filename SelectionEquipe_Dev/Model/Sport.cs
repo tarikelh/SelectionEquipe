@@ -10,14 +10,12 @@ namespace SelectionEquipe_Dev.Model
 {
     public class Sport
     {
-        [Key]
         public int SportId { get; set; }
 
-        [@RequiredAttribute]
         [DisplayName("Nom Sport")]
         public string NomSport { get; set; }
-        public ICollection<Poste> Postes { get; set; }
-        public ICollection<Utilisateur> Utilisateurs { get; set; }
+        public virtual ICollection<Poste> Postes { get; set; }
+        public virtual ICollection<Utilisateur> Utilisateurs { get; set; }
 
     }
 }

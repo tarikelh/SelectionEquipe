@@ -11,26 +11,24 @@ namespace SelectionEquipe_Dev.Model
 {
     public abstract class Utilisateur
     {
-        [Key]
+
         public int Id { get; set; }
 
-        [@RequiredAttribute]
-        [MaxLength(50), MinLength(1)]
         public string Nom { get; set; }
 
-        [@RequiredAttribute]
-        [MaxLength(50), MinLength(1)]
         public string Prenom { get; set; }
 
-        [@RequiredAttribute]
-        [MaxLength(50), MinLength(6)]
+
         public string Login { get; set; }
 
-        [@RequiredAttribute]
-        [MaxLength(50), MinLength(8)]
+
         public string Password { get; set; }
 
-        public Sport Sport { get; set; } = null;
+        public virtual Sport Sport { get; set; }
+
+        public int? SportId { get; set; }
+
+
 
     }
 }
