@@ -58,7 +58,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApplicationSelection.cs" />
+    <Compile Include="Dtos\LoginDTO.cs" />
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionCoachsJoueurs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionCoachsJoueurs.Designer.cs">
+      <DependentUpon>GestionCoachsJoueurs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionEquipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionEquipes.Designer.cs">
+      <DependentUpon>GestionEquipes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionSports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionSports.Designer.cs">
+      <DependentUpon>GestionSports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\ApplicationSelection.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +93,10 @@
     <Compile Include="Migrations\202211291322440_InitialModel.cs" />
     <Compile Include="Migrations\202211291322440_InitialModel.designer.cs">
       <DependentUpon>202211291322440_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212051119139_SecondModel.cs" />
+    <Compile Include="Migrations\202212051119139_SecondModel.designer.cs">
+      <DependentUpon>202212051119139_SecondModel.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Admin.cs" />
@@ -79,11 +108,34 @@
     <Compile Include="Model\Utilisateur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ISportRepository.cs" />
+    <Compile Include="Repository\IUtilisateurRepository.cs" />
+    <Compile Include="Repository\SportRepository.cs" />
+    <Compile Include="Repository\UtilisateurRepository.cs" />
+    <Compile Include="Service\ISportService.cs" />
+    <Compile Include="Service\IUtilisateurService.cs" />
+    <Compile Include="Service\SportService.cs" />
+    <Compile Include="Service\UtilisateurService.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionCoachsJoueurs.resx">
+      <DependentUpon>GestionCoachsJoueurs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionEquipes.resx">
+      <DependentUpon>GestionEquipes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionSports.resx">
+      <DependentUpon>GestionSports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211291322440_InitialModel.resx">
       <DependentUpon>202211291322440_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212051119139_SecondModel.resx">
+      <DependentUpon>202212051119139_SecondModel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -109,7 +161,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\SelectionEquipeWeb\SelectionEquipeWeb.csproj">
+      <Project>{8BBA1CB0-6423-47BE-B66D-4294590BA128}</Project>
+      <Name>SelectionEquipeWeb</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
