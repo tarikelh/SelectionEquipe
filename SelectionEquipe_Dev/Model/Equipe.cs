@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelectionEquipeWeb_Dev.Model
+namespace SelectionEquipe_Dev.Model
 {
     public class Equipe
     {

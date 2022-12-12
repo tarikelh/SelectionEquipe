@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelectionEquipeWeb_Dev.Dtos
+namespace SelectionEquipe_Dev.Dtos
 {
     public class LoginDTO
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelectionEquipeWeb_Dev.Model
+namespace SelectionEquipeWeb.Models
 {
     public class Sport
     {

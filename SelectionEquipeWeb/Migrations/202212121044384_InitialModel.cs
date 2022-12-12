@@ -1,4 +1,4 @@
-﻿namespace SelectionEquipe_Dev.Migrations
+﻿namespace SelectionEquipeWeb.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
@@ -20,13 +20,16 @@
                         Note = c.Int(),
                         Commentaire = c.String(),
                         EquipeId = c.Int(),
+                        CoachId = c.Int(),
                         Discriminator = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Utilisateurs", t => t.CoachId)
                 .ForeignKey("dbo.Equipes", t => t.EquipeId)
                 .ForeignKey("dbo.Sports", t => t.SportId)
                 .Index(t => t.SportId)
-                .Index(t => t.EquipeId);
+                .Index(t => t.EquipeId)
+                .Index(t => t.CoachId);
             
             CreateTable(
                 "dbo.Sports",
@@ -82,11 +85,13 @@
             DropForeignKey("dbo.PosteJoueur", "JoueurId", "dbo.Utilisateurs");
             DropForeignKey("dbo.PosteJoueur", "PosteId", "dbo.Postes");
             DropForeignKey("dbo.Utilisateurs", "EquipeId", "dbo.Equipes");
+            DropForeignKey("dbo.Utilisateurs", "CoachId", "dbo.Utilisateurs");
             DropForeignKey("dbo.Equipes", "EquipeId", "dbo.Utilisateurs");
             DropIndex("dbo.PosteJoueur", new[] { "JoueurId" });
             DropIndex("dbo.PosteJoueur", new[] { "PosteId" });
             DropIndex("dbo.Equipes", new[] { "EquipeId" });
             DropIndex("dbo.Postes", new[] { "SportId" });
+            DropIndex("dbo.Utilisateurs", new[] { "CoachId" });
             DropIndex("dbo.Utilisateurs", new[] { "EquipeId" });
             DropIndex("dbo.Utilisateurs", new[] { "SportId" });
             DropTable("dbo.PosteJoueur");

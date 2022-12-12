@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SelectionEquipeWeb_Dev
+namespace SelectionEquipe_Dev
 {
     internal static class Program
     {

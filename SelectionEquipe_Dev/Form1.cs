@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SelectionEquipeWeb_Dev.Dtos;
-using SelectionEquipeWeb_Dev.Model;
-using SelectionEquipeWeb_Dev.Repository;
-using SelectionEquipeWeb_Dev.Service;
+using SelectionEquipe_Dev.Dtos;
+using SelectionEquipe_Dev.Repository;
+using SelectionEquipe_Dev.Service;
+using SelectionEquipe_Dev.Model;
 
-namespace SelectionEquipeWeb_Dev
+namespace SelectionEquipe_Dev
 {
     public partial class Form1 : Form
     {
@@ -87,10 +87,19 @@ namespace SelectionEquipeWeb_Dev
         {
             LoginDTO loginDTO = new LoginDTO(txtLoginC.Text, txtPasswordC.Text);
             Utilisateur u = utilisateurService.CheckLogin(loginDTO);
-            if (u != null)
+            
+            if (u is Admin)
             {
                 FormAdmin formAdmin = new FormAdmin();
                 formAdmin.ShowDialog();
+            }
+            else if(u is Coach)
+            {
+
+            }
+            else if(u is Joueur)
+            {
+
             }
             else
             {

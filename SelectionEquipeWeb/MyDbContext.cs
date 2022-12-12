@@ -1,5 +1,5 @@
 ﻿using System.Data.Entity;
-using SelectionEquipeWeb_Dev.Model;
+using SelectionEquipeWeb.Models;
 
 namespace SelectionEquipeWeb
 {

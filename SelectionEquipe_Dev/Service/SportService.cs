@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SelectionEquipeWeb_Dev.Model;
-using SelectionEquipeWeb_Dev.Repository;
+using SelectionEquipe_Dev.Model;
+using SelectionEquipe_Dev.Repository;
 
-namespace SelectionEquipeWeb_Dev.Service
+namespace SelectionEquipe_Dev.Service
 {
     public class SportService : ISportService
     {

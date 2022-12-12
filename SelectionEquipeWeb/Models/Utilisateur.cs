@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelectionEquipeWeb_Dev.Model
+namespace SelectionEquipeWeb.Models
 {
     public abstract class Utilisateur
     {

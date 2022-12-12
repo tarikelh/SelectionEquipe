@@ -1,4 +1,4 @@
-﻿namespace SelectionEquipeWeb_Dev
+﻿namespace SelectionEquipe_Dev
 {
     partial class GestionEquipes
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SelectionEquipeWeb_Dev.Model;
+using SelectionEquipe_Dev.Model;
 
-namespace SelectionEquipeWeb_Dev.Service
+namespace SelectionEquipe_Dev.Service
 {
     public interface ISportService
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SelectionEquipeWeb_Dev
+namespace SelectionEquipe_Dev
 {
     public partial class FormAdmin : Form
     {

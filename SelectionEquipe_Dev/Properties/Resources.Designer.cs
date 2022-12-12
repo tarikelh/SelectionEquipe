@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SelectionEquipeWeb_Dev.Properties
+namespace SelectionEquipe_Dev.Properties
 {
 
 

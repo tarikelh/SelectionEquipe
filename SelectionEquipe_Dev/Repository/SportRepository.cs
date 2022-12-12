@@ -4,9 +4,9 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SelectionEquipeWeb_Dev.Model;
+using SelectionEquipe_Dev.Model;
 
-namespace SelectionEquipeWeb_Dev.Repository
+namespace SelectionEquipe_Dev.Repository
 {
     public class SportRepository : ISportRepository
     {

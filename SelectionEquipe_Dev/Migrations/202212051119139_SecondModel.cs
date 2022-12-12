@@ -1,4 +1,4 @@
-﻿namespace SelectionEquipeWeb_Dev.Migrations
+﻿namespace SelectionEquipe_Dev.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
