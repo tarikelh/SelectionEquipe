@@ -22,5 +22,9 @@ namespace SelectionEquipe_Dev.Service
         Utilisateur CheckLogin(LoginDTO loginDto);
 
         Utilisateur FindByLogin(string login);
+        List<Utilisateur> GetUtilisateursbySport(Sport s);
+
+        List<Coach> GetCoaches();
+        List<Joueur> GetJoueurs();
     }
 }

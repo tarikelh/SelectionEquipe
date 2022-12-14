@@ -49,6 +49,21 @@ namespace SelectionEquipe_Dev.Service
             return _repo.GetById(id);
         }
 
+        public List<Coach> GetCoaches()
+        {
+            return _repo.GetCoaches();
+        }
+
+        public List<Joueur> GetJoueurs()
+        {
+            return _repo.GetJoueurs();
+        }
+
+        public List<Utilisateur> GetUtilisateursbySport(Sport s)
+        {
+            return _repo.GetUtilisateursbySport(s);
+        }
+
         public void Insert(Utilisateur u)
         {
             _repo.Insert(u);

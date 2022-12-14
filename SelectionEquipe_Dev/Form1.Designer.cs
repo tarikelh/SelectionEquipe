@@ -277,6 +277,7 @@
             this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SelectionEquipe";
             this.groupBox1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);

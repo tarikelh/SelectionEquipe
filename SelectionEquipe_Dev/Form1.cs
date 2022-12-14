@@ -80,7 +80,7 @@ namespace SelectionEquipe_Dev
 
         private void Clear()
         {
-            txtNom.Text = txtPrenom.Text = txtLoginI.Text = txtPasswordI.Text = "";
+            txtLoginC.Text=txtPasswordC.Text=txtNom.Text = txtPrenom.Text = txtLoginI.Text = txtPasswordI.Text = "";
         }
 
         private void btnConnexion_Click(object sender, EventArgs e)

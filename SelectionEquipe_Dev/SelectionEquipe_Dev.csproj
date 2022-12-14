@@ -65,6 +65,18 @@
     <Compile Include="FormAdmin.Designer.cs">
       <DependentUpon>FormAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCoach.Designer.cs">
+      <DependentUpon>FormCoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJoueur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJoueur.Designer.cs">
+      <DependentUpon>FormJoueur.cs</DependentUpon>
+    </Compile>
     <Compile Include="GestionCoachsJoueurs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,10 +120,14 @@
     <Compile Include="Model\Utilisateur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\EquipeRepository.cs" />
+    <Compile Include="Repository\IEquipeRepository.cs" />
     <Compile Include="Repository\ISportRepository.cs" />
     <Compile Include="Repository\IUtilisateurRepository.cs" />
     <Compile Include="Repository\SportRepository.cs" />
     <Compile Include="Repository\UtilisateurRepository.cs" />
+    <Compile Include="Service\EquipeService.cs" />
+    <Compile Include="Service\IEquipeService.cs" />
     <Compile Include="Service\ISportService.cs" />
     <Compile Include="Service\IUtilisateurService.cs" />
     <Compile Include="Service\SportService.cs" />

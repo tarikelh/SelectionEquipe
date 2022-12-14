@@ -20,5 +20,9 @@ namespace SelectionEquipe_Dev.Repository
         void Delete(int id);
 
         Utilisateur FindByLogin(string login);
+
+        List<Utilisateur> GetUtilisateursbySport(Sport s);
+        List<Coach> GetCoaches();
+        List<Joueur> GetJoueurs();
     }
 }

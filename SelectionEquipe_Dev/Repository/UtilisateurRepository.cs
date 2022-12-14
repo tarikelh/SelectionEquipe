@@ -34,12 +34,27 @@ namespace SelectionEquipe_Dev.Repository
 
         public List<Utilisateur> GetAll()
         {
-            return _dao.Utilisateurs.AsNoTracking().ToList();
+            return _dao.Utilisateurs.Where(x => x.Login.ToLower() != "admin").AsNoTracking().ToList();
         }
 
         public Utilisateur GetById(int id)
         {
             return _dao.Utilisateurs.AsNoTracking().SingleOrDefault(x => x.Id == id);
+        }
+
+        public List<Coach> GetCoaches()
+        {
+            return _dao.Coachs.AsNoTracking().ToList();
+        }
+
+        public List<Joueur> GetJoueurs()
+        {
+            return _dao.Joueurs.AsNoTracking().ToList();
+        }
+
+        public List<Utilisateur> GetUtilisateursbySport(Sport s)
+        {
+            return _dao.Utilisateurs.Where(x => x.SportId == s.SportId).AsNoTracking().ToList();
         }
 
         public void Insert(Utilisateur u)

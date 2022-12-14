@@ -15,6 +15,12 @@ namespace SelectionEquipe_Dev.Model
         {
         }
 
+        protected Utilisateur(string nom, string prenom)
+        {
+            Nom = nom;
+            Prenom = prenom;
+        }
+
         public enum Role {
             Coach = 1,
             Joueur
@@ -35,6 +41,6 @@ namespace SelectionEquipe_Dev.Model
 
         public int? SportId { get; set; }
 
-
+        public new string ToString() { return $"{Prenom} {Nom}"; }
     }
 }

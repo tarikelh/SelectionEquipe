@@ -7,17 +7,15 @@ using SelectionEquipe_Dev.Model;
 
 namespace SelectionEquipe_Dev.Service
 {
-    public interface ISportService
+    public interface IEquipeService
     {
-        void Insert(Sport s);
+        void Insert(Equipe e);
 
-        List<Sport> GetAll();
+        List<Equipe> GetAll();
 
-        Sport GetById(int id);
+        Equipe GetById(int id);
 
-        Sport FindByName(string name);
+        Equipe FindByName(string name);
         void Delete(int id);
-
-
     }
 }

@@ -16,5 +16,10 @@ namespace SelectionEquipe_Dev
         {
             InitializeComponent();
         }
+
+        private void btnRetour_Click(object sender, EventArgs e)
+        {
+            GestionEquipes.ActiveForm.Close();
+        }
     }
 }

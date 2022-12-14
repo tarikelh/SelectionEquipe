@@ -85,6 +85,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "FormAdmin";
             this.Padding = new System.Windows.Forms.Padding(10);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormAdmin";
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

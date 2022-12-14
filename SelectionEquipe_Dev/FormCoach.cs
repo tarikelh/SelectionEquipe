@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SelectionEquipe_Dev
 {
-    public partial class GestionSports : Form
+    public partial class FormCoach : Form
     {
-        public GestionSports()
+        public FormCoach()
         {
             InitializeComponent();
-        }
-
-        private void btnRetour_Click(object sender, EventArgs e)
-        {
-            GestionSports.ActiveForm.Close();
         }
     }
 }
