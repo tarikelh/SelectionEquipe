@@ -8,5 +8,12 @@ namespace SelectionEquipe_Dev.Model
 {
     public class Coach : Utilisateur
     {
+        public Coach()
+        {
+        }
+
+        public virtual Equipe Equipe { get; set; } = null;
+
+        public virtual ICollection<Joueur> Joueurs { get; set; }
     }
 }
