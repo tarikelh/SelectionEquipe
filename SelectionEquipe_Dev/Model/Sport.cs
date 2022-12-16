@@ -14,7 +14,9 @@ namespace SelectionEquipe_Dev.Model
 
         [DisplayName("Nom Sport")]
         public string NomSport { get; set; }
+
         public virtual ICollection<Poste> Postes { get; set; }
+
         public virtual ICollection<Utilisateur> Utilisateurs { get; set; }
 
     }
